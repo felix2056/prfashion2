@@ -1,5 +1,6 @@
 <?php include_once('../includes/header.php'); ?>
 
+<?php include_once('../includes/nav.php'); ?>
 
 <nav class="breadcrumb" aria-label="breadcrumbs">
 
@@ -30,30 +31,66 @@
                     </div>
 
                     <div class="rte">
-                        SHIPPING POLICY<br>All orders are shipped directly from the manufacturer. The length of time it
-                        will take to arrive depends on the production time of the designer. Most orders ship within 3-4
-                        business days. If ship time is longer than the average 7 days it will be listed in the product
-                        descriptions. Please expect to add 2-3 days for holiday orders. Some products will be charged an
-                        extra shipping surcharge.<br> <br>US STANDARD SHIPPING CHARGES (48 CONTIGUOUS STATES)<br>ORDER
-                        TOTAL SHIPPING CHARGE<br>Up to $50.00 $ 8.95<br>$50.01 - $80.00 $11.95<br>$80.01 - $110.00
-                        $14.95<br>$110.01 - $149.99 $18.95<br>$150 &amp; Over FREE<br>*Shipping to Alaska/Hawaii is an
-                        additional charge of $19.00<br> <br>RUSH SERVICES<br>If you need an order rushed, please email
-                        us at contactus@storename.com and we can make arrangements to get your order to you as soon as
-                        possible, based on the designer's inventory and policies. Please email us at
-                        contactus@storename.com.<br> <br>CANADIAN &amp; INTERNATIONAL ORDERS<br>Canadian orders have a
-                        transit time of 7- 10 days. A shipping surcharge of $35.00 applies to all orders. The $35.00
-                        will be charged at the time of purchase. storename.com is not responsible for tariffs for
-                        additional taxes imposed by Canada. Any orders that are refused by the customer will be charged
-                        back to the customer's credit card.<br> <br>UPGRADED SHIPPING &amp; INTERNATIONAL
-                        PRICING<br>Ground Shipping to Canada $35.00 Surcharge<br>Shipping to UK $50.00
-                        Surcharge<br>Shipping to Australia $65.00 Surcharge<br>*Not all orders can be shipped abroad
-                        please email for more information.<br> <br>INTERNATIONAL SHIPPING TIMES<br>Standard: 7-10
-                        business days<br>Business days are Monday-Friday, excluding holidays.<br> <br>Shipping charges
-                        for some packages are based on the weight of the package. The price you are given when placing
-                        an online order is an estimate and it is sometimes necessary for us to adjust the price on your
-                        credit card. If you have any questions regarding the cost of shipping please contact us at
-                        contactus@storename.com and we will be happy to answer any questions that you may have.<br>
-                        <br><br>
+                        PRIVACY POLICY<br>This Privacy Policy governs the manner in which storename.com collects, uses,
+                        maintains and discloses information collected from users (each, a "User") of the storename.com
+                        website ("Site"). This privacy policy applies to the Site and all products and services offered
+                        by storename.com.<br> <br>PERSONAL IDENTIFICATION NUMBER<br>We may collect personal
+                        identification information from Users in a variety of ways, including, but not limited to, when
+                        Users visit our site, register on the site, place an order, subscribe to the newsletter, and in
+                        connection with other activities, services, features or resources we make available on our Site.
+                        Users may be asked for, as appropriate, name, email address, mailing address, phone number,
+                        credit card information. Users may, however, visit our Site anonymously. We will collect
+                        personal identification information from Users only if they voluntarily submit such information
+                        to us. Users can always refuse to supply personally identification information, except that it
+                        may prevent them from engaging in certain Site related activities.<br> <br>NON-PERSONAL
+                        IDENTIFICATION NUMBER<br>We may collect non-personal identification information about Users
+                        whenever they interact with our Site. The non-personal identification information may include
+                        the browser name, the type of computer and technical information about Users means of connection
+                        to our Sites, such as the operating system and the Internet service providers utilized and other
+                        similar information.<br> <br>WEB BROWSER COOKIES<br>Our Site may use "cookies" to enhance User
+                        experience. User's web browser places cookies on their hard drive for record-keeping purposes
+                        and sometimes to track information about them. The user may choose to set their web browser to
+                        refuse cookies or to alert you when cookies are being sent. If they do so, note that some parts
+                        of the Site may not function properly.<br> <br>HOW WE USE COLLECTED INFORMATION<br>storename.com
+                        may collect and use Users personal information for the following purposes:<br>- To improve
+                        customer service<br>The information you provide helps us respond to your customer service
+                        requests and support needs more efficiently.<br>- To personalize user experience<br>We may use
+                        information in the aggregate to understand how our Users as a group use the services and
+                        resources provided on our Site.<br>- To improve our Site<br>We may use feedback you provide to
+                        improve our products and services.<br>- To process payments<br>We may use the information Users
+                        provide about themselves when placing an order only to provide service to that order. We do not
+                        share this information with outside parties except to the extent necessary to provide the
+                        service.<br>- To run a promotion, contest, survey or other Site feature<br>To send Users
+                        information they agreed to receive about topics we think will be of interest to them.<br>- To
+                        send periodic emails<br>We may use the email address to send User information and updates
+                        pertaining to their order. It may also be used to respond to their inquiries, questions, and/or
+                        other requests. If User decides to opt-in to our mailing list, they will receive emails that may
+                        include company news, updates, related product or service information, etc. If at any time the
+                        User would like to unsubscribe from receiving future emails, they may do so by contacting us via
+                        our Site.<br> <br>HOW WE PROTECT YOUR INFORMATION<br>We adopt appropriate data collection,
+                        storage, and processing practices and security measures to protect against unauthorized access,
+                        alteration, disclosure or destruction of your personal information, username, password,
+                        transaction information and data stored on our Site.<br>Sensitive and private data exchange
+                        between the Site and its Users happens over an SSL secured communication channel and is
+                        encrypted and protected with digital signatures.<br> <br>SHARING YOUR PERSONAL INFORMATION<br>We
+                        do not sell, trade, or rent Users personal identification information to others. We may share
+                        generic aggregated demographic information not linked to any personal identification information
+                        regarding visitors and users with our business partners, trusted affiliates and advertisers for
+                        the purposes outlined above. We may use third-party service providers to help us operate our
+                        business and the Site or administer activities on our behalfs, such as sending out newsletters
+                        or surveys. We may share your information with these third parties for those limited purposes
+                        provided that you have given us your permission.<br> <br>CHANGES TO THIS PRIVACY
+                        POLICY<br>storename.com has the discretion to update this privacy policy at any time. When we
+                        do, we will post a notification on the main page of our Site. We encourage Users to frequently
+                        check this page for any changes to stay informed about how we are helping to protect the
+                        personal information we collect. You acknowledge and agree that it is your responsibility to
+                        review this privacy policy periodically and become aware of modifications.<br> <br>YOUR
+                        ACCEPTANCE OF THESE TERMS<br>By using this Site, you signify your acceptance of this policy. If
+                        you do not agree to this policy, please do not use our Site. Your continued use of the Site
+                        following the posting of changes to this policy will be deemed your acceptance of those
+                        changes.<br> <br>CONTACTING US<br>If you have any questions about this Privacy Policy, the
+                        practices of this site, or your dealings with this site, please contact us
+                        at:<br>storename.com<br>contactus@storename.com<br> <br><br>
                     </div>
 
                 </div>
@@ -65,6 +102,7 @@
     </div>
 
 
+    <div class="dt-sc-hr-invisible-large"></div>
 </main>
 
 

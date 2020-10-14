@@ -1,5 +1,6 @@
 <?php include_once('../includes/header.php'); ?>
 
+<?php include_once('../includes/nav.php'); ?>
 
 <nav class="breadcrumb" aria-label="breadcrumbs">
 
@@ -30,13 +31,13 @@
                     </div>
 
                     <div class="rte">
-                        <p><strong>SportsWear</strong>&nbsp;is an online store that strives to bring you the best in
-                            sports clothes and accessories.<br><br>Quality has been our hallmark and we are very careful
-                            in selecting our manufacturers &amp; suppliers to ensure our customers are always satisfied
-                            with the quality of our products.</p>
-                        <p><br>For us our customers have always come first and our customer support team is a gang of
-                            fanatics ready to go any length to ensure smile on our customers face. Even if that means
-                            discontinuing a line of products in light of complaints about quality.</p>
+                        <strong>OurStore</strong><span>&nbsp;is an online store that strives to bring you the best in
+                            clothes and accessories.</span><br><br><span>Quality has been our hallmark and we are very
+                            careful in selecting our manufacturers &amp; suppliers to ensure our customers are always
+                            satisfied with the quality of our products.</span><br><br><span>For us our customers have
+                            always come first and our customer support team is a gang of fanatics ready to go any length
+                            to ensure smile on our customers face. Even if that means discontinuing a line of products
+                            in light of complaints about quality.</span>
                     </div>
 
                 </div>
@@ -48,6 +49,7 @@
     </div>
 
 
+    <div class="dt-sc-hr-invisible-large"></div>
 </main>
 
 

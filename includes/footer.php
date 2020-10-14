@@ -84,11 +84,11 @@
 
                             <ul class="site-footer__links">
 
-                                <li><a style="color:#000;" href="/pages/privacy-policy">Privacy Policy</a></li>
+                                <li><a style="color:#000;" href="/pages/privacy-policy.php">Privacy Policy</a></li>
 
-                                <li><a style="color:#000;" href="/pages/return-policy">Return Policy</a></li>
+                                <li><a style="color:#000;" href="/pages/return-policy.php">Return Policy</a></li>
 
-                                <li><a style="color:#000;" href="/pages/shipping-policy">Terms &amp; Conditions</a></li>
+                                <li><a style="color:#000;" href="/pages/shipping-policy.php">Terms &amp; Conditions</a></li>
 
                             </ul>
                         </div>
@@ -100,11 +100,11 @@
 
                             <ul class="site-footer__links">
 
-                                <li><a style="color:#000;" href="/pages/about-us">About us</a></li>
+                                <li><a style="color:#000;" href="/pages/about-us.php">About us</a></li>
 
-                                <li><a style="color:#000;" href="/pages/contact-us">Contact us</a></li>
+                                <li><a style="color:#000;" href="/pages/contact-us.php">Contact us</a></li>
 
-                                <li><a style="color:#000;" href="/pages/faqs">FAQs</a></li>
+                                <li><a style="color:#000;" href="/pages/faqs.php">FAQs</a></li>
 
                             </ul>
                         </div>

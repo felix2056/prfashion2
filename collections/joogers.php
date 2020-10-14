@@ -12,12 +12,12 @@
     <?php include_once('includes/nav.php'); ?>
 
     <nav class="breadcrumb" aria-label="breadcrumbs">
-        <h1>Sports Bra</h1>
+        <h1>Joggers</h1>
         <a href="/" title="Back to the frontpage">Home</a>
 
         <span aria-hidden="true" class="breadcrumb__sep">/</span>
 
-        <span>Sports Bra</span>
+        <span>Joggers</span>
     </nav>
 
 </div>

@@ -76,7 +76,6 @@
 
 
     </div>
-    
     <header class="site-header">
         <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 155px;">
             <div class="header-sticky" style="">
@@ -95,7 +94,7 @@
                                         </div>
 
 
-                                        <h1 class="grid__item wide--two-sixths post-large--two-sixths large--one-whole site-header__logo"
+                                        <div class="h1 site-header__logo grid__item wide--two-sixths  post-large--two-sixths  large--one-whole"
                                             itemscope="" itemtype="http://schema.org/Organization">
 
 
@@ -106,11 +105,16 @@
                                             </a>
 
 
-                                        </h1>
+                                        </div>
 
 
                                         <ul
                                             class="menu_bar_right grid__item wide--two-sixths  post-large--two-sixths large--one-whole">
+
+
+
+
+
                                             <div class="header-search">
                                                 <div id="sb-search" class="sb-search medium-down--hide">
                                                     <form action="/search" method="get"
@@ -154,7 +158,7 @@
 
 
                                                     <li class="header-wish-list">
-                                                        <a class="wishlist" href="/pages/wishlist" title="Wishlist"> <i
+                                                        <a class="wishlist" href="/pages/wishlist.php" title="Wishlist"> <i
                                                                 class="icon-heart icons"></i></a>
                                                     </li>
 
@@ -736,38 +740,42 @@
 
                         /* Example media queries */
 
-                        <blade media|%20screen%20and%20(max-width%3A%2055.1875em)%7B%0D>.cbp-spmenu-horizontal {
-                            font-size: 75%;
-                            height: 110px;
+                        @media screen and (max-width: 55.1875em) {
+
+                            .cbp-spmenu-horizontal {
+                                font-size: 75%;
+                                height: 110px;
+                            }
+
+                            .cbp-spmenu-top {
+                                top: -110px;
+                            }
+
+                            .cbp-spmenu-bottom {
+                                bottom: -110px;
+                            }
+
                         }
 
-                        .cbp-spmenu-top {
-                            top: -110px;
-                        }
+                        @media screen and (max-height: 26.375em) {
 
-                        .cbp-spmenu-bottom {
-                            bottom: -110px;
-                        }
+                            .cbp-spmenu-vertical {
+                                font-size: 90%;
+                                width: 190px;
+                            }
 
-                        }
+                            .cbp-spmenu-left,
+                            .cbp-spmenu-push-toleft {
+                                left: -190px;
+                            }
 
-                        <blade media|%20screen%20and%20(max-height%3A%2026.375em)%7B%0D>.cbp-spmenu-vertical {
-                            font-size: 90%;
-                            width: 190px;
-                        }
+                            .cbp-spmenu-right {
+                                right: -190px;
+                            }
 
-                        .cbp-spmenu-left,
-                        .cbp-spmenu-push-toleft {
-                            left: -190px;
-                        }
-
-                        .cbp-spmenu-right {
-                            right: -190px;
-                        }
-
-                        .cbp-spmenu-push-toright {
-                            left: 190px;
-                        }
+                            .cbp-spmenu-push-toright {
+                                left: 190px;
+                            }
                         }
 
 
@@ -777,438 +785,441 @@
 
 
                         /* width: 750px  */
-                        <blade media|%20(min-width%3A%20968)%20and%20(max-width%3A%20991px)%20%7B%0D>.banner .container {
-                            margin-left: -375px;
+                        @media (min-width: 968) and (max-width: 991px) {
+                            .banner .container {
+                                margin-left: -375px;
+                            }
+
+                            .banner .inner {
+                                width: 320px;
+                            }
+
+                            .header-bottom.on .header-panel-top {
+                                right: 65px;
+                            }
+
+                            .header-bottom.on .site-nav {
+                                padding-right: 90px;
+                            }
+
+                            .nav-bar .header-logo-fix {
+                                margin-left: 10px;
+                                margin-right: 10px;
+                            }
+
+                            .site-nav>li>a {
+                                margin-left: 12px;
+                                margin-right: 12px;
+                            }
+
+                            .header-bottom.on .site-nav>li>a {
+                                margin-left: 7px;
+                                margin-right: 7px;
+                                font-size: 10px;
+                            }
+
                         }
 
-                        .banner .inner {
-                            width: 320px;
-                        }
+                        @media (min-width: 968px) {
+                            .cbp-spmenu-push-toright {
+                                left: 0 !important;
+                            }
 
-                        .header-bottom.on .header-panel-top {
-                            right: 65px;
-                        }
-
-                        .header-bottom.on .site-nav {
-                            padding-right: 90px;
-                        }
-
-                        .nav-bar .header-logo-fix {
-                            margin-left: 10px;
-                            margin-right: 10px;
-                        }
-
-                        .site-nav>li>a {
-                            margin-left: 12px;
-                            margin-right: 12px;
-                        }
-
-                        .header-bottom.on .site-nav>li>a {
-                            margin-left: 7px;
-                            margin-right: 7px;
-                            font-size: 10px;
-                        }
-
-                        }
-
-                        <blade media|%20(min-width%3A%20968px)%20%7B%0D>.cbp-spmenu-push-toright {
-                            left: 0 !important;
-                        }
-
-                        #cbp-spmenu-s1 {
-                            display: none !important;
-                        }
+                            #cbp-spmenu-s1 {
+                                display: none !important;
+                            }
 
 
-                        .header-bottom.on .nav-bar .header-logo-fix {
-                            display: table;
-                            height: 48px;
-                            position: relative;
-                            z-index: 2;
-                        }
+                            .header-bottom.on .nav-bar .header-logo-fix {
+                                display: table;
+                                height: 48px;
+                                position: relative;
+                                z-index: 2;
+                            }
 
-                        .header-bottom.on .nav-bar .header-logo-fix a {
-                            display: table-cell;
-                            vertical-align: middle;
-                        }
+                            .header-bottom.on .nav-bar .header-logo-fix a {
+                                display: table-cell;
+                                vertical-align: middle;
+                            }
 
-                        .header-bottom.on .site-nav {
-                            padding-right: 120px;
-                        }
+                            .header-bottom.on .site-nav {
+                                padding-right: 120px;
+                            }
 
-                        .have-fixed .nav-bar {
-                            position: fixed;
-                            left: 0;
-                            right: 0;
-                            top: 0;
-                            z-index: 99;
-                            padding: 0;
-                        }
+                            .have-fixed .nav-bar {
+                                position: fixed;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                z-index: 99;
+                                padding: 0;
+                            }
 
-                        .have-fixed .nav-search {
-                            position: fixed;
-                            top: 0;
-                            right: 65px;
-                            z-index: 100;
-                            width: 52px;
-                        }
+                            .have-fixed .nav-search {
+                                position: fixed;
+                                top: 0;
+                                right: 65px;
+                                z-index: 100;
+                                width: 52px;
+                            }
 
 
                         }
 
                         /* width: 100%  */
-                        <blade media|%20(max-width%3A%20767px)%20%7B%0D>body.cbp-spmenu-push-toright {
-                            cursor: pointer;
-                        }
+                        @media (max-width: 767px) {
+                            body.cbp-spmenu-push-toright {
+                                cursor: pointer;
+                            }
 
-                        .cbp-spmenu .site-nav-dropdown.style_4 .inner img {
-                            margin-top: 10px;
-                        }
+                            .cbp-spmenu .site-nav-dropdown.style_4 .inner img {
+                                margin-top: 10px;
+                            }
 
 
-                        .visible-phone {
-                            display: block;
-                        }
+                            .visible-phone {
+                                display: block;
+                            }
 
-                        .hidden-phone {
-                            display: none;
-                        }
+                            .hidden-phone {
+                                display: none;
+                            }
 
-                        /* header */
+                            /* header */
 
 
-
-
-
-                        /* Fix Menu Mobile */
-                        .nav-bar {
-                            display: none;
-                        }
-
-                        .gf-menu-device-container .site-nav {
-                            display: block !important;
-                            overflow: hidden;
-                            width: 100%;
-                        }
-
-                        .gf-menu-device-container .site-nav li {
-                            width: 100%;
-                        }
-
-                        .gf-menu-device-container .site-nav.gf-menu.clicked {
-                            visibility: visible;
-                            height: auto;
-                        }
-
-                        /* End Fix Menu Mobile */
-
-                        .cbp-spmenu-left.cbp-spmenu-open {
-                            left: 0;
-                            overflow-y: auto;
-                        }
-
-                        .cbp-spmenu-push-toright {
-                            overflow-y: hidden;
-                            position: fixed;
-                            width: 100%;
-                        }
-
-                        #megamenu-responsive-root {
-                            display: none !important;
-                        }
-
-                        .menu-block {
-                            width: 100%;
-                            padding: 0;
-                        }
-
-                        /* Icon Menu */
-                        .site-nav>li:hover>a>span:first-child,
-                        .site-nav>li:hover>a.current>span:first-child,
-                        .site-nav>li>a.current>span:first-child {
-                            border: 0;
-                        }
-
-                        .site-nav a {
-                            white-space: normal;
-                        }
-
-                        .cbp-spmenu {}
-
-                        .cbp-spmenu .site-nav>li>a {
-                            font-size: 13px;
-                            font-weight: 700;
-                            padding: 12px 20px;
-                            margin: 0;
-                        }
-
-                        .cbp-spmenu .site-nav>li.dropdown.open>a {
-                            position: relative;
-                        }
-
-                        .cbp-spmenu .site-nav>li.dropdown.open>a:before {
-                            top: 15px;
-                        }
-
-                        .menu-block .site-nav {
-                            border-bottom: none;
-                        }
-
-                        .site-nav li {
-                            position: relative;
-                        }
-
-                        .site-nav li.dropdown {
-                            position: relative;
-                        }
-
-                        .site-nav>li {
-                            display: block;
-                            clear: both;
-                            position: relative;
-                        }
-
-                        .site-nav>li>a {
-                            padding: 12px 0;
-                        }
-
-                        .site-nav>li.dropdown>p.toogleClick {
-                            height: 0;
-                            width: 0;
-                            display: block;
-                            margin-left: 7px;
-                            top: 2px;
-                            right: 5px;
-                            margin: 0;
-                            padding: 0;
-                            z-index: 2;
-                            padding: 20px;
-                        }
-
-                        .site-nav>li.dropdown p.toogleClick {
-                            position: absolute;
-                            right: 0;
-                            text-indent: -999em;
-                            cursor: pointer;
-                        }
-
-                        .site-nav>li.dropdown>p.toogleClick.mobile-toggle-open:before {
-                            border-top-color: transparent;
-                            top: 14px;
-                        }
-
-                        .site-nav li.dropdown a>.icon-dropdown {
-                            display: none;
-                        }
-
-                        .site-nav-dropdown .container {
-                            padding-left: 0;
-                            padding-right: 0;
-                        }
-
-                        .site-nav-dropdown .row {
-                            margin: 0px !important
-                        }
-
-
-                        .site-nav>li.dropdown ul p.toogleClick.mobile-toggle-open:before {
-                            top: 10px;
-                        }
-
-                        .site-nav-dropdown .col-1 .inner p.toogleClick:before,
-                        .site-nav>li.dropdown ul p.toogleClick:before {
-                            display: block;
-                            content: "";
-                            position: absolute;
-                            right: 0;
-                            top: -15px !important;
-                            width: 20px;
-                            height: 40px;
-                        }
-
-                        .site-nav-dropdown p.toogleClick {
-                            background: url(//cdn.shopify.com/s/files/1/0084/1144/7356/t/3/assets/icon-megamenu.png?0) no-repeat;
-                            padding: 0;
-                            width: 8px;
-                            height: 8px;
-                            right: 0;
-                            top: 18px;
-                            z-index: 2;
-                        }
-
-                        .site-nav-dropdown .col-1 .inner p.toogleClick {
-                            display: block !important;
-                        }
-
-                        .site-nav>li.dropdown ul p.toogleClick.mobile-toggle-open,
-                        .site-nav-dropdown .col-1 .inner p.toogleClick.mobile-toggle-open {
-                            background-position: center bottom;
-                            height: 4px;
-                        }
-
-                        .site-nav>li>ul>.dropdown.open>ul {
-                            display: block;
-                        }
-
-                        .site-nav>li>ul>li>ul>.dropdown.open>ul {
-                            display: block;
-                        }
-
-                        .site-nav>li>ul>li>ul>ul>li>.dropdown.open>ul {
-                            display: block;
-                        }
-
-                        .site-nav>li>.site-nav-dropdown {}
-
-                        .site-nav>li>.site-nav-dropdown>li>a {
-                            padding: 11px 0 13px;
-                            text-transform: uppercase;
-                            font-size: 11px;
-                            font-weight: 700;
-                        }
-
-                        .site-nav>li>.site-nav-dropdown>li:first-child>a {
-                            border-top: 0;
-                        }
-
-                        .site-nav>li>.site-nav-dropdown>li:hover>a:before {
-                            background: none;
-                        }
-
-                        .site-nav>li li .site-nav-dropdown {
-                            padding: 0 15px;
-                            margin-bottom: 20px;
-                        }
-
-                        .site-nav-dropdown li:hover a {
-                            background: none;
-                        }
-
-                        .site-nav-dropdown li:hover a,
-                        .site-nav-dropdown a:active {
-                            padding-left: 0;
-                        }
-
-                        .site-nav-dropdown li li a {
-                            padding: 7px 0;
-                        }
-
-                        .site-nav-dropdown li li:hover a {
-                            padding: 7px 20px;
-                        }
-
-                        .site-nav-dropdown li:hover>a:before {
-                            left: 0;
-                        }
-
-                        .site-nav-dropdown .col-1,
-                        .site-nav-dropdown .col-2,
-                        .site-nav-dropdown .col-3 {
-                            width: 100%;
-                            padding: 0;
-                        }
-
-                        .site-nav-dropdown .col-3 {
-                            padding-bottom: 28px;
-                        }
-
-                        .site-nav-dropdown .col-1 .inner {
-                            width: 100%;
-                            padding: 0;
-                        }
-
-                        .cbp-spmenu .site-nav-dropdown .col-1 .inner:first-child>a {
-                            border-top: 0;
-                        }
-
-                        .site-nav-dropdown .col-1 ul.dropdown li a {
-                            padding: 7px 15px;
-                            font-size: 12px;
-                            font-weight: 400;
-                            text-transform: none;
-                            border: 0;
-                        }
-
-                        .site-nav-dropdown .col-1 ul.dropdown li:hover>a:before {
-                            left: 20px;
-                        }
-
-                        .site-nav .widget-featured-product {
-                            text-align: left;
-                            border-width: 1px 0;
-                            margin-bottom: 10px;
-                            padding-top: 23px;
-                            padding-bottom: 25px;
-                        }
-
-                        .site-nav .products-grid .grid-item {
-                            text-align: left;
-                        }
-
-                        .site-nav .products-grid .grid-item .product-grid-image {
-                            float: left;
-                            margin: 0 15px 0 0;
-                        }
-
-                        .site-nav .widget-featured-product .widget-title h3 {
-                            font-size: 11px;
-                        }
-
-                        .widget-featured-product .grid-item .product-grid-image img {
-                            width: 100%;
-                        }
-
-                        .widget-featured-product .products-grid .grid-item {
-                            position: relative;
-                        }
-
-                        .widget-featured-product .details {
-                            padding: 10px;
-                        }
-
-                        .site-nav .product-label {
-                            display: none;
-                        }
-
-                        .site-nav .product-label strong {
-                            float: left;
-                        }
-
-                        .cbp-spmenu .site-nav-dropdown .col-1 .inner {
-                            width: 100% !important;
-                            position: relative;
-                            padding: 0;
-                            float: left;
-                        }
-
-                        .cbp-spmenu .site-nav-dropdown.style_4 .inner {
-                            width: 100%;
-                        }
-
-                        /*Update 2.0.1*/
-                        .site-nav-dropdown .col-2 .col-left {
-                            width: 100%;
-                            clear: both;
-                            padding: 0;
-                        }
-
-                        .site-nav-dropdown .col-2 .col-right {
-                            width: 100%;
-                            clear: both;
-                            padding: 0 0 10px;
-                        }
-
-                        .site-nav-dropdown .style_2 .col-2 .col-left a {
-                            padding-right: 0;
-                        }
-
-                        .site-nav-dropdown .style_3 .inner>img {
-                            display: none;
-                        }
-
-                        .site-nav-dropdown .style_4 .col-2 {
-                            padding-right: 0;
-                        }
+
+
+
+                            /* Fix Menu Mobile */
+                            .nav-bar {
+                                display: none;
+                            }
+
+                            .gf-menu-device-container .site-nav {
+                                display: block !important;
+                                overflow: hidden;
+                                width: 100%;
+                            }
+
+                            .gf-menu-device-container .site-nav li {
+                                width: 100%;
+                            }
+
+                            .gf-menu-device-container .site-nav.gf-menu.clicked {
+                                visibility: visible;
+                                height: auto;
+                            }
+
+                            /* End Fix Menu Mobile */
+
+                            .cbp-spmenu-left.cbp-spmenu-open {
+                                left: 0;
+                                overflow-y: auto;
+                            }
+
+                            .cbp-spmenu-push-toright {
+                                overflow-y: hidden;
+                                position: fixed;
+                                width: 100%;
+                            }
+
+                            #megamenu-responsive-root {
+                                display: none !important;
+                            }
+
+                            .menu-block {
+                                width: 100%;
+                                padding: 0;
+                            }
+
+                            /* Icon Menu */
+                            .site-nav>li:hover>a>span:first-child,
+                            .site-nav>li:hover>a.current>span:first-child,
+                            .site-nav>li>a.current>span:first-child {
+                                border: 0;
+                            }
+
+                            .site-nav a {
+                                white-space: normal;
+                            }
+
+                            .cbp-spmenu {}
+
+                            .cbp-spmenu .site-nav>li>a {
+                                font-size: 13px;
+                                font-weight: 700;
+                                padding: 12px 20px;
+                                margin: 0;
+                            }
+
+                            .cbp-spmenu .site-nav>li.dropdown.open>a {
+                                position: relative;
+                            }
+
+                            .cbp-spmenu .site-nav>li.dropdown.open>a:before {
+                                top: 15px;
+                            }
+
+                            .menu-block .site-nav {
+                                border-bottom: none;
+                            }
+
+                            .site-nav li {
+                                position: relative;
+                            }
+
+                            .site-nav li.dropdown {
+                                position: relative;
+                            }
+
+                            .site-nav>li {
+                                display: block;
+                                clear: both;
+                                position: relative;
+                            }
+
+                            .site-nav>li>a {
+                                padding: 12px 0;
+                            }
+
+                            .site-nav>li.dropdown>p.toogleClick {
+                                height: 0;
+                                width: 0;
+                                display: block;
+                                margin-left: 7px;
+                                top: 2px;
+                                right: 5px;
+                                margin: 0;
+                                padding: 0;
+                                z-index: 2;
+                                padding: 20px;
+                            }
+
+                            .site-nav>li.dropdown p.toogleClick {
+                                position: absolute;
+                                right: 0;
+                                text-indent: -999em;
+                                cursor: pointer;
+                            }
+
+                            .site-nav>li.dropdown>p.toogleClick.mobile-toggle-open:before {
+                                border-top-color: transparent;
+                                top: 14px;
+                            }
+
+                            .site-nav li.dropdown a>.icon-dropdown {
+                                display: none;
+                            }
+
+                            .site-nav-dropdown .container {
+                                padding-left: 0;
+                                padding-right: 0;
+                            }
+
+                            .site-nav-dropdown .row {
+                                margin: 0px !important
+                            }
+
+
+                            .site-nav>li.dropdown ul p.toogleClick.mobile-toggle-open:before {
+                                top: 10px;
+                            }
+
+                            .site-nav-dropdown .col-1 .inner p.toogleClick:before,
+                            .site-nav>li.dropdown ul p.toogleClick:before {
+                                display: block;
+                                content: "";
+                                position: absolute;
+                                right: 0;
+                                top: -15px !important;
+                                width: 20px;
+                                height: 40px;
+                            }
+
+                            .site-nav-dropdown p.toogleClick {
+                                background: url(//cdn.shopify.com/s/files/1/0084/1144/7356/t/3/assets/icon-megamenu.png?0) no-repeat;
+                                padding: 0;
+                                width: 8px;
+                                height: 8px;
+                                right: 0;
+                                top: 18px;
+                                z-index: 2;
+                            }
+
+                            .site-nav-dropdown .col-1 .inner p.toogleClick {
+                                display: block !important;
+                            }
+
+                            .site-nav>li.dropdown ul p.toogleClick.mobile-toggle-open,
+                            .site-nav-dropdown .col-1 .inner p.toogleClick.mobile-toggle-open {
+                                background-position: center bottom;
+                                height: 4px;
+                            }
+
+                            .site-nav>li>ul>.dropdown.open>ul {
+                                display: block;
+                            }
+
+                            .site-nav>li>ul>li>ul>.dropdown.open>ul {
+                                display: block;
+                            }
+
+                            .site-nav>li>ul>li>ul>ul>li>.dropdown.open>ul {
+                                display: block;
+                            }
+
+                            .site-nav>li>.site-nav-dropdown {}
+
+                            .site-nav>li>.site-nav-dropdown>li>a {
+                                padding: 11px 0 13px;
+                                text-transform: uppercase;
+                                font-size: 11px;
+                                font-weight: 700;
+                            }
+
+                            .site-nav>li>.site-nav-dropdown>li:first-child>a {
+                                border-top: 0;
+                            }
+
+                            .site-nav>li>.site-nav-dropdown>li:hover>a:before {
+                                background: none;
+                            }
+
+                            .site-nav>li li .site-nav-dropdown {
+                                padding: 0 15px;
+                                margin-bottom: 20px;
+                            }
+
+                            .site-nav-dropdown li:hover a {
+                                background: none;
+                            }
+
+                            .site-nav-dropdown li:hover a,
+                            .site-nav-dropdown a:active {
+                                padding-left: 0;
+                            }
+
+                            .site-nav-dropdown li li a {
+                                padding: 7px 0;
+                            }
+
+                            .site-nav-dropdown li li:hover a {
+                                padding: 7px 20px;
+                            }
+
+                            .site-nav-dropdown li:hover>a:before {
+                                left: 0;
+                            }
+
+                            .site-nav-dropdown .col-1,
+                            .site-nav-dropdown .col-2,
+                            .site-nav-dropdown .col-3 {
+                                width: 100%;
+                                padding: 0;
+                            }
+
+                            .site-nav-dropdown .col-3 {
+                                padding-bottom: 28px;
+                            }
+
+                            .site-nav-dropdown .col-1 .inner {
+                                width: 100%;
+                                padding: 0;
+                            }
+
+                            .cbp-spmenu .site-nav-dropdown .col-1 .inner:first-child>a {
+                                border-top: 0;
+                            }
+
+                            .site-nav-dropdown .col-1 ul.dropdown li a {
+                                padding: 7px 15px;
+                                font-size: 12px;
+                                font-weight: 400;
+                                text-transform: none;
+                                border: 0;
+                            }
+
+                            .site-nav-dropdown .col-1 ul.dropdown li:hover>a:before {
+                                left: 20px;
+                            }
+
+                            .site-nav .widget-featured-product {
+                                text-align: left;
+                                border-width: 1px 0;
+                                margin-bottom: 10px;
+                                padding-top: 23px;
+                                padding-bottom: 25px;
+                            }
+
+                            .site-nav .products-grid .grid-item {
+                                text-align: left;
+                            }
+
+                            .site-nav .products-grid .grid-item .product-grid-image {
+                                float: left;
+                                margin: 0 15px 0 0;
+                            }
+
+                            .site-nav .widget-featured-product .widget-title h3 {
+                                font-size: 11px;
+                            }
+
+                            .widget-featured-product .grid-item .product-grid-image img {
+                                width: 100%;
+                            }
+
+                            .widget-featured-product .products-grid .grid-item {
+                                position: relative;
+                            }
+
+                            .widget-featured-product .details {
+                                padding: 10px;
+                            }
+
+                            .site-nav .product-label {
+                                display: none;
+                            }
+
+                            .site-nav .product-label strong {
+                                float: left;
+                            }
+
+                            .cbp-spmenu .site-nav-dropdown .col-1 .inner {
+                                width: 100% !important;
+                                position: relative;
+                                padding: 0;
+                                float: left;
+                            }
+
+                            .cbp-spmenu .site-nav-dropdown.style_4 .inner {
+                                width: 100%;
+                            }
+
+                            /*Update 2.0.1*/
+                            .site-nav-dropdown .col-2 .col-left {
+                                width: 100%;
+                                clear: both;
+                                padding: 0;
+                            }
+
+                            .site-nav-dropdown .col-2 .col-right {
+                                width: 100%;
+                                clear: both;
+                                padding: 0 0 10px;
+                            }
+
+                            .site-nav-dropdown .style_2 .col-2 .col-left a {
+                                padding-right: 0;
+                            }
+
+                            .site-nav-dropdown .style_3 .inner>img {
+                                display: none;
+                            }
+
+                            .site-nav-dropdown .style_4 .col-2 {
+                                padding-right: 0;
+                            }
 
                         }
 
@@ -1322,7 +1333,7 @@
                                                                 <ul class="site-nav-dropdown">
 
                                                                     <li>
-                                                                        <a href="/collections/mens-tank-top" class="">
+                                                                        <a href="/collections/mens-tank-top.php" class="">
                                                                             <span>
                                                                                 Tank Top
                                                                             </span>
@@ -1334,7 +1345,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/mens-shirt" class="">
+                                                                        <a href="/collections/mens-shirt.php" class="">
                                                                             <span>
                                                                                 Men's Shirt
                                                                             </span>
@@ -1346,7 +1357,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/mens-jackets" class="">
+                                                                        <a href="/collections/mens-jackets.php" class="">
                                                                             <span>
                                                                                 Men's Jackets
                                                                             </span>
@@ -1358,7 +1369,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/mens-hoodie" class="">
+                                                                        <a href="/collections/mens-hoodie.php" class="">
                                                                             <span>
                                                                                 Men's Hoodie
                                                                             </span>
@@ -1382,7 +1393,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/mens-suit" class="">
+                                                                        <a href="/collections/mens-suit.php" class="">
                                                                             <span>
                                                                                 Men's Suit
                                                                             </span>
@@ -1423,7 +1434,7 @@
                                                                 <ul class="site-nav-dropdown">
 
                                                                     <li>
-                                                                        <a href="/collections/dresses" class="">
+                                                                        <a href="/collections/dresses.php" class="">
                                                                             <span>
                                                                                 Dresses
                                                                             </span>
@@ -1435,7 +1446,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/leggings" class="">
+                                                                        <a href="/collections/leggings.php" class="">
                                                                             <span>
                                                                                 Leggings
                                                                             </span>
@@ -1447,7 +1458,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/womens-jackets" class="">
+                                                                        <a href="/collections/womens-jackets.php" class="">
                                                                             <span>
                                                                                 Jackets
                                                                             </span>
@@ -1459,7 +1470,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/womens-top-t-shirt"
+                                                                        <a href="/collections/womens-top-t-shirt.php"
                                                                             class="">
                                                                             <span>
                                                                                 Top &amp; T-shirt
@@ -1472,7 +1483,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/skirts" class="">
+                                                                        <a href="/collections/skirts.php" class="">
                                                                             <span>
                                                                                 Skirts
                                                                             </span>
@@ -1484,7 +1495,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/tunics" class="">
+                                                                        <a href="/collections/tunics.php" class="">
                                                                             <span>
                                                                                 Tunics
                                                                             </span>
@@ -1525,7 +1536,7 @@
                                                                 <ul class="site-nav-dropdown">
 
                                                                     <li>
-                                                                        <a href="/collections/mens-boots" class="">
+                                                                        <a href="/collections/mens-boots.php" class="">
                                                                             <span>
                                                                                 Boots
                                                                             </span>
@@ -1537,7 +1548,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/mens-sneakers" class="">
+                                                                        <a href="/collections/mens-sneakers.php" class="">
                                                                             <span>
                                                                                 Sneakers
                                                                             </span>
@@ -1549,7 +1560,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/mens-casual" class="">
+                                                                        <a href="/collections/mens-casual.php" class="">
                                                                             <span>
                                                                                 Casual
                                                                             </span>
@@ -1561,7 +1572,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/flats-and-loafers"
+                                                                        <a href="/collections/flats-and-loafers.php"
                                                                             class="">
                                                                             <span>
                                                                                 Flats &amp; Loafers
@@ -1603,7 +1614,7 @@
                                                                 <ul class="site-nav-dropdown">
 
                                                                     <li>
-                                                                        <a href="/collections/flats" class="">
+                                                                        <a href="/collections/flats.php" class="">
                                                                             <span>
                                                                                 Flats
                                                                             </span>
@@ -1615,7 +1626,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/heels" class="">
+                                                                        <a href="/collections/heels.php" class="">
                                                                             <span>
                                                                                 Heels
                                                                             </span>
@@ -1627,7 +1638,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/sandals" class="">
+                                                                        <a href="/collections/sandals.php" class="">
                                                                             <span>
                                                                                 Sandals
                                                                             </span>
@@ -1639,7 +1650,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/women-boots" class="">
+                                                                        <a href="/collections/women-boots.php" class="">
                                                                             <span>
                                                                                 Boots
                                                                             </span>
@@ -1680,7 +1691,7 @@
                                                                 <ul class="site-nav-dropdown">
 
                                                                     <li>
-                                                                        <a href="/collections/anklet" class="">
+                                                                        <a href="/collections/anklet.php" class="">
                                                                             <span>
                                                                                 Anklet
                                                                             </span>
@@ -1692,7 +1703,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/earring" class="">
+                                                                        <a href="/collections/earring.php" class="">
                                                                             <span>
                                                                                 Earring
                                                                             </span>
@@ -1704,7 +1715,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/rings" class="">
+                                                                        <a href="/collections/rings.php" class="">
                                                                             <span>
                                                                                 Rings
                                                                             </span>
@@ -1716,7 +1727,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/necklace" class="">
+                                                                        <a href="/collections/necklace.php" class="">
                                                                             <span>
                                                                                 Necklace
                                                                             </span>
@@ -1757,7 +1768,7 @@
                                                                 <ul class="site-nav-dropdown">
 
                                                                     <li>
-                                                                        <a href="/collections/1-piece" class="">
+                                                                        <a href="/collections/1-piece.php" class="">
                                                                             <span>
                                                                                 1 Piece
                                                                             </span>
@@ -1769,7 +1780,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/bikini" class="">
+                                                                        <a href="/collections/bikini.php" class="">
                                                                             <span>
                                                                                 Bikini
                                                                             </span>
@@ -1781,7 +1792,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/coverup" class="">
+                                                                        <a href="/collections/coverup.php" class="">
                                                                             <span>
                                                                                 Cover up
                                                                             </span>
@@ -1793,7 +1804,7 @@
                                                                     </li>
 
                                                                     <li>
-                                                                        <a href="/collections/sports-bra" class="">
+                                                                        <a href="/collections/sports-bra.php" class="">
                                                                             <span>
                                                                                 Sports Bra
                                                                             </span>
@@ -1819,7 +1830,7 @@
 
 
                                                             <li class=" ">
-                                                                <a href="/collections/bags-wallets" class="">
+                                                                <a href="/collections/bags-wallets.php" class="">
                                                                     <span>
                                                                         Bags &amp; Wallets
                                                                     </span>

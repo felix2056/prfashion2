@@ -1,5 +1,6 @@
 <?php include_once('../includes/header.php'); ?>
 
+<?php include_once('../includes/nav.php'); ?>
 
 <nav class="breadcrumb" aria-label="breadcrumbs">
 
@@ -15,6 +16,9 @@
 <div class="dt-sc-hr-invisible-large"></div>
 
 <main class="main-content ">
+
+
+
     <div class="wrapper">
 
         <div class="grid__item">
@@ -243,6 +247,7 @@
     </div>
 
 
+    <div class="dt-sc-hr-invisible-large"></div>
 </main>
 
 
