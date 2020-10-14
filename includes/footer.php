@@ -237,3 +237,5 @@
     type="text/javascript"></script>
 <script src="//cdn.shopify.com/s/files/1/0084/1144/7356/t/3/assets/shop.js?v=10226083029463057609"
     type="text/javascript"></script>
+
+    <?php include_once('modals.php'); ?>

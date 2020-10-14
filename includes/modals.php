@@ -1,3 +1,35 @@
+<script>
+$(document).ready(function() {
+    var body = $('body');
+    var doc = $(document);
+
+    var showLeftPush = $('#showLeftPush');
+    var nav = $('#cbp-spmenu-s1');
+
+    showLeftPush.on('click', function(e) {
+        e.stopPropagation();
+
+        body.toggleClass('cbp-spmenu-push-toright');
+        nav.toggleClass('cbp-spmenu-open');
+        showLeftPush.toggleClass('active');
+    });
+
+    $('.gf-menu-device-wrapper .close-menu').on('click', function() {
+        showLeftPush.trigger('click');
+    });
+
+    doc.on('click', function(e) {
+        if (!$(e.target).closest('#cbp-spmenu-s1').length && showLeftPush.hasClass('active')) {
+            showLeftPush.trigger('click');
+        }
+    });
+});
+</script>
+
+
+
+
+
 <!-- Begin quick-view-template -->
 <div class="clearfix" id="quickview-template" style="display:none">
     <div class="overlay"></div>

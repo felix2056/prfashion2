@@ -9,11 +9,13 @@
 
 <div class="wrapper-container">
 
+    <?php include_once('includes/nav.php'); ?>
+
     <!-- BEGIN content_for_index -->
     <div id="shopify-section-1526708252183" class="shopify-section index-section index-section--flush">
-
         <div class="home-slideshow">
-            <div class="variable-width" data-slick="{ dots: true,slidesToScroll: 1,autoplay:true,fade: true,autoplaySpeed:5000}" role="toolbar">
+            <div class="variable-width"
+                data-slick="{ dots: true,slidesToScroll: 1,autoplay:true,fade: true,autoplaySpeed:5000}" role="toolbar">
 
                 <a href="/collections/mens-jackets" tabindex="0"><img
                         src="//cdn.shopify.com/s/files/1/0084/1144/7356/files/banner-1_2000x.jpg?v=1550774353"
@@ -2487,17 +2489,17 @@
     <?php include_once('includes/footer.php'); ?>
 
     <script>
-        $(document).on('ready', function() {
-            $('.variable-width').slick({
-                dots: true,
-                slidesToScroll: 1,
-                autoplay: false,
-                fade: true,
-                autoplaySpeed: 5000,
-                afterChange: function(slick, currentSlide) {
-                    console.log(currentSlide);
-                }
-            });
-        })
-        </script>
+    $(document).on('ready', function() {
+        $('.variable-width').slick({
+            dots: true,
+            slidesToScroll: 1,
+            autoplay: false,
+            fade: true,
+            autoplaySpeed: 5000,
+            afterChange: function(slick, currentSlide) {
+                console.log(currentSlide);
+            }
+        });
+    })
+    </script>
 </div>

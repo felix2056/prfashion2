@@ -76,6 +76,7 @@
 
 
     </div>
+    
     <header class="site-header">
         <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 155px;">
             <div class="header-sticky" style="">
@@ -110,11 +111,6 @@
 
                                         <ul
                                             class="menu_bar_right grid__item wide--two-sixths  post-large--two-sixths large--one-whole">
-
-
-
-
-
                                             <div class="header-search">
                                                 <div id="sb-search" class="sb-search medium-down--hide">
                                                     <form action="/search" method="get"
