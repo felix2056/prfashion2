@@ -1286,20 +1286,10 @@
                             line-height: 46px;
                             font-size: 20px;
                         }
-
-
-
-
-
                         /* Header borders */
                         </style>
-
-
-
-
-
-
                     </div>
+
                     <div id="shopify-section-navigation" class="shopify-section">
                         <div class="desktop-megamenu">
                             <div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 55px;">
@@ -1310,25 +1300,12 @@
                                                 <div class="site-nav-dropdown_inner">
                                                     <div class="menu-tool">
                                                         <ul class="site-nav">
-
-
-
-
-
-
-
                                                             <li class="  dropdown">
                                                                 <a class="menu__moblie" href="#">
                                                                     <span>
                                                                         Men's Clothing
                                                                     </span>
                                                                 </a>
-
-
-
-
-
-
 
                                                                 <ul class="site-nav-dropdown">
 
@@ -1355,67 +1332,8 @@
 
                                                                         </ul>
                                                                     </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/mens-jackets.php" class="">
-                                                                            <span>
-                                                                                Men's Jackets
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/mens-hoodie.php" class="">
-                                                                            <span>
-                                                                                Men's Hoodie
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/mens-t-shirt" class="">
-                                                                            <span>
-                                                                                Men's T-Shirt
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/mens-suit.php" class="">
-                                                                            <span>
-                                                                                Men's Suit
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
                                                                 </ul>
-
-
-
-
-
                                                             </li>
-
-
-
-
-
 
 
                                                             <li class="  dropdown">
@@ -1424,12 +1342,6 @@
                                                                         Women's Clothing
                                                                     </span>
                                                                 </a>
-
-
-
-
-
-
 
                                                                 <ul class="site-nav-dropdown">
 
@@ -1456,68 +1368,8 @@
 
                                                                         </ul>
                                                                     </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/womens-jackets.php" class="">
-                                                                            <span>
-                                                                                Jackets
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/womens-top-t-shirt.php"
-                                                                            class="">
-                                                                            <span>
-                                                                                Top &amp; T-shirt
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/skirts.php" class="">
-                                                                            <span>
-                                                                                Skirts
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/tunics.php" class="">
-                                                                            <span>
-                                                                                Tunics
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
                                                                 </ul>
-
-
-
-
-
                                                             </li>
-
-
-
-
-
 
 
                                                             <li class="  dropdown">
@@ -1527,20 +1379,12 @@
                                                                     </span>
                                                                 </a>
 
-
-
-
-
-
-
                                                                 <ul class="site-nav-dropdown">
-
                                                                     <li>
                                                                         <a href="/collections/mens-boots.php" class="">
                                                                             <span>
                                                                                 Boots
                                                                             </span>
-
                                                                         </a>
                                                                         <ul class="site-nav-dropdown">
 
@@ -1552,51 +1396,13 @@
                                                                             <span>
                                                                                 Sneakers
                                                                             </span>
-
                                                                         </a>
                                                                         <ul class="site-nav-dropdown">
 
                                                                         </ul>
                                                                     </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/mens-casual.php" class="">
-                                                                            <span>
-                                                                                Casual
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/flats-and-loafers.php"
-                                                                            class="">
-                                                                            <span>
-                                                                                Flats &amp; Loafers
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
                                                                 </ul>
-
-
-
-
-
                                                             </li>
-
-
-
-
-
-
 
                                                             <li class="  dropdown">
                                                                 <a class="menu__moblie" href="#">
@@ -1604,12 +1410,6 @@
                                                                         Women's Footwears
                                                                     </span>
                                                                 </a>
-
-
-
-
-
-
 
                                                                 <ul class="site-nav-dropdown">
 
@@ -1636,198 +1436,8 @@
 
                                                                         </ul>
                                                                     </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/sandals.php" class="">
-                                                                            <span>
-                                                                                Sandals
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/women-boots.php" class="">
-                                                                            <span>
-                                                                                Boots
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
                                                                 </ul>
-
-
-
-
-
                                                             </li>
-
-
-
-
-
-
-
-                                                            <li class="  dropdown">
-                                                                <a class="menu__moblie" href="#">
-                                                                    <span>
-                                                                        Jewelry
-                                                                    </span>
-                                                                </a>
-
-
-
-
-
-
-
-                                                                <ul class="site-nav-dropdown">
-
-                                                                    <li>
-                                                                        <a href="/collections/anklet.php" class="">
-                                                                            <span>
-                                                                                Anklet
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/earring.php" class="">
-                                                                            <span>
-                                                                                Earring
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/rings.php" class="">
-                                                                            <span>
-                                                                                Rings
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/necklace.php" class="">
-                                                                            <span>
-                                                                                Necklace
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                </ul>
-
-
-
-
-
-                                                            </li>
-
-
-
-
-
-
-
-                                                            <li class="  dropdown">
-                                                                <a class="menu__moblie" href="#">
-                                                                    <span>
-                                                                        Lingerie
-                                                                    </span>
-                                                                </a>
-
-
-
-
-
-
-
-                                                                <ul class="site-nav-dropdown">
-
-                                                                    <li>
-                                                                        <a href="/collections/1-piece.php" class="">
-                                                                            <span>
-                                                                                1 Piece
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/bikini.php" class="">
-                                                                            <span>
-                                                                                Bikini
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/coverup.php" class="">
-                                                                            <span>
-                                                                                Cover up
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="/collections/sports-bra.php" class="">
-                                                                            <span>
-                                                                                Sports Bra
-                                                                            </span>
-
-                                                                        </a>
-                                                                        <ul class="site-nav-dropdown">
-
-                                                                        </ul>
-                                                                    </li>
-
-                                                                </ul>
-
-
-
-
-
-                                                            </li>
-
-
-
-
-
-
 
                                                             <li class=" ">
                                                                 <a href="/collections/bags-wallets.php" class="">
@@ -1835,19 +1445,7 @@
                                                                         Bags &amp; Wallets
                                                                     </span>
                                                                 </a>
-
-
-
-
-
-
-
-
-
-
-
                                                             </li>
-
                                                         </ul>
                                                     </div>
                                                 </div>

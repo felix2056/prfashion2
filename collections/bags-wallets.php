@@ -1,10 +1,10 @@
 <?php include_once('../includes/header.php'); ?>
 
-<?php require_once('../products/db/mencloth_cat.php'); ?>
+<?php require_once('../products/db/bagsandwallets_cat.php'); ?>
 
 
 <?php
-    $products = json_decode(getAllMenTank(), true);
+    $products = json_decode(getAllBags(), true);
 ?>
 
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
@@ -19,12 +19,12 @@
     <?php include_once('../includes/nav.php'); ?>
 
     <nav class="breadcrumb" aria-label="breadcrumbs">
-        <h1>Mens tank top</h1>
+        <h1>Bags and wallets</h1>
         <a href="/" title="Back to the frontpage">Home</a>
 
         <span aria-hidden="true" class="breadcrumb__sep">/</span>
 
-        <span>Mens tank top</span>
+        <span>Bags and wallets</span>
     </nav>
 
 </div>

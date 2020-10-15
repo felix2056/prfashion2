@@ -4,7 +4,7 @@
 
 
 <?php
-    $products = json_decode(getAllMenTank(), true);
+    $products = json_decode(getAllMenShirt(), true);
 ?>
 
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
@@ -19,12 +19,12 @@
     <?php include_once('../includes/nav.php'); ?>
 
     <nav class="breadcrumb" aria-label="breadcrumbs">
-        <h1>Mens tank top</h1>
+        <h1>Mens shirt</h1>
         <a href="/" title="Back to the frontpage">Home</a>
 
         <span aria-hidden="true" class="breadcrumb__sep">/</span>
 
-        <span>Mens tank top</span>
+        <span>Mens shirt</span>
     </nav>
 
 </div>
